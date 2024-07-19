@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHI-RECIPES</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="recipe.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div id="pop-up-container">
+    </div>
+    <header>
+        <div class="chi-recipes">
+            <div class="bowl">
+                <i class='bx bx-bowl-hot' ></i>
+            </div>
+            <div class="name">
+                <a href="">
+                    <h1>CHI</h1>
+                    <h2>RECIPES</h2>
+                </a>
+            </div>
+            </div>
+
+        </div>
+        <div class="nav">
+            <ul class="nav-elements">
+                <li> 
+                     <div class="search-container">
+                        <form id="search" action="">
+                            <input id="searchinput"type="text" placeholder="SEARCH FOR RECIPES">
+                            <button type="submit"><i class='bx bx-search'></i></button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="bookmark">
+            <a href="#recipes-container"><i class='bx bxs-bookmark'></i></a>
+        </div>
+    </header>
+    <main>
+        <div id="introduction">
+            <div class="image-intro">
+                <img src="Resources/fish.jpg" alt="">
+            </div>
+            <div class="intro-details">
+                <h2>WELCOME TO <span class="heading">CHI</span></h2>
+                <h2><span class="heading">RECIPES</span></h2>
+                <p>
+                    Embark on a culinary journey like no other with Chi Recipes, your go-to app for discovering, creating, and savoring delicious dishes from around the world. 
+                    Whether you're a seasoned chef or a kitchen novice, Chi Recipes is designed to inspire and guide you every step of the way.
+                </p>
+            </div>
+        </div>
+
+        <h2 class="popular-ingredients-heading">POPULAR INGREDIENTS</h2>
+
+        <div id="popular-ingredients-container">
+            <!-- <div class="picks">
+                <div class="image-pick">
+                    <img src="Resources/spaghzheader.jpg" alt="">
+                </div>
+                <h3 class="pick-title">Spaghetti Bolognese</h3>
+                <p class="pick-details">Spaghetti Bolognese is a classic Italian dish that combines al dente spaghetti with a rich, hearty meat sauce. Made with ground beef, tomatoes, onions, garlic, and a blend of Italian herbs, this comforting dish is simmerred to perfection</p>
+            </div>
+    
+            <div class="picks">
+                <div class="image-pick">
+                    <img src="Resources/grill-1532337_1920.jpg" alt="">
+                </div>
+                <h3 class="pick-title">Barbecue Meat</h3>
+                <p class="pick-details">Barbecue meat is a flavorful and tender dish often prepared with cuts like ribs, brisket, or chicken. Marinated in a smoky, tangy barbecue sauce made from ingredients like ketchup, vinegar, brown sugar, and spices, the meat is then slow-cooked or grilled to achieve a perfect caramelized exterior and juicy interior.</p>
+            </div>
+            <div class="picks">
+                <div class="image-pick">
+                    <img src="Resources/burger-5893927_1920.jpg" alt="">
+                </div>
+                <h3 class="pick-title">Beef Burger</h3>
+                <p class="pick-details">A juicy beef burger is a quintessential favorite, featuring a perfectly seasoned ground beef patty, grilled or pan-fried to achieve a crispy outer crust while remaining tender and juicy inside. Typically served on a toasted bun with a variety of toppings such as lettuce, tomato, onion, pickles, and cheese.</p>
+            </div> -->
+            <div class="popular-ingredient">
+                <img src="Resources/beef.jpg" alt="">
+                <div class="recipeDetails">
+                    <h2 class="recipeName">BEEF</h2>
+                </div>
+            </div>
+            <div class="popular-ingredient">
+                <img src="Resources/chicken.jpg" alt="">
+                <div class="recipeDetails">
+                    <h2 class="recipeName">CHICKEN</h2>
+                </div>
+            </div>
+            <div class="popular-ingredient">
+                <img src="Resources/salmon.jpg" alt="">
+                <div class="recipeDetails">
+                    <h2 class="recipeName">SALMON</h2>
+                </div>
+            </div>
+            <div class="popular-ingredient">
+                <img src="Resources/eggs.jpg" alt="">
+                <div class="recipeDetails">
+                    <h2 class="recipeName">EGGS</h2>
+                </div>
+            </div>
+            <div class="popular-ingredient">
+                <img src="Resources/rice.jpg" alt="">
+                <div class="recipeDetails">
+                    <h2 class="recipeName">RICE</h2>
+                </div>
+            </div>
+            <div class="popular-ingredient">
+                <img src="Resources/pork.jpg" alt="">
+                <div class="recipeDetails">
+                    <h2 class="recipeName">PORK</h2>
+                </div>
+            </div>
+
+        </div>
+       
+        <div class="resultsHeading">
+            <h1>YOUR RECIPE RESULTS:</h1>
+        </div>
+
+        <div id="recipeResultsElements">
+            <!-- <div class="recipeResult">
+                <img src="Resources/chicken.jpg" alt="">
+                <div class="recipeDetails">
+                    <h2 class="recipeName">CHICKEN</h2>
+                    <div class="buttons">
+                        <button type="submit">GET RECIPE</button>
+                        <i class='bx bx-like' ></i>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <div class="recipeResult">
+                <img src="Resources/beef tac.jpg" alt="">
+                <div class="recipeDetails">
+                    <h2 class="recipeName">BEEF TACO</h2>
+                    <div class="buttons">
+                        <button type="submit">GET RECIPE</button>
+                        <i class='bx bx-like' ></i>
+                    </div>
+                </div>
+            </div> -->
+<!-- 
+            <div class="recipeResult">
+                <img src="Resources/fish.jpg" alt="">
+                <div class="recipeDetails">
+                    <h2 class="recipeName">FISH</h2>
+                    <div class="buttons">
+                        <button type="submit">GET RECIPE</button>
+                        <i class='bx bx-like' ></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="recipeResult">
+                <img src="Resources/grill-1532337_1920.jpg" alt="">
+                <div class="recipeDetails">
+                    <h2 class="recipeName">BERBEQUE</h2>
+                    <div class="buttons">
+                        <button type="submit">GET RECIPE</button>
+                        <i class='bx bx-like' ></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipeResult">
+                <img src="Resources/burger.jpg" alt="">
+                <div class="recipeDetails">
+                    <h2 class="recipeName">BURGER</h2>
+                    <div class="buttons">
+                        <button type="submit">GET RECIPE</button>
+                        <i class='bx bx-like' ></i>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+
+        <h2 id="latest-heading" class="latest-heading" >SAVED RECIPES</h2>
+
+        <div id="recipes-container">
+
+            <!-- <div class="saved-recipe">
+                <img src="Resources/beef tac.jpg" alt="">
+                <div class="recipeDetails">
+                    <h2 class="recipeName">BEEF TACO</h2>
+                    <div class="buttons">
+                        <button id="getButton"type="submit">GET RECIPE</button>
+                        <button id="deleteButton"type="submit">DELETE</button>
+                    </div>
+                </div>
+            </div>  -->
+        </div>
+    </main>
+    
+    <footer id="about">
+        <div class="copy-right">
+            <p class="copy"><i class='bx bx-copyright' ></i>ALL RIGHTS RESERVED <span class="company">DAVE-IRUNGU</span></p>
+        </div>
+        <div class="media">
+            <ul class="media-links">
+                <li class="media-icons"><a href="https://x.com/WALTIZO20"><i class='bx bxl-twitter' ></i></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="chi.js"></script>
+</body>
+</html>
