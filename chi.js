@@ -33,6 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
     recipeData = JSON.parse(localStorage.getItem('recipeData')) || [];
     create_items();
 
+
+    //this creates a randow recipe without a specified meal name
     let search_input = document.getElementById("searchinput").value.trim();
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${search_input}`)
         .then(response => response.json())
@@ -217,10 +219,11 @@ function delete_recipe(id) {
     let savedRecipes = JSON.parse(localStorage.getItem("recipeData")) || [];
     savedRecipes = savedRecipes.filter(recipe => recipe.idMeal !== id);
     localStorage.setItem("recipeData", JSON.stringify(savedRecipes));
+    recipeData = savedRecipes;
     create_items();
 }
 
-//I have created a function that scrolls the user into view when he /she ahs performed a search or click event on the popular ingredients
+//I have created a function that scrolls the user into view when he /she has performed a search or click event on the popular ingredients
 function scrollToContainer(section) {
     if (section) {
         section.scrollIntoView({ behavior: 'smooth' });
